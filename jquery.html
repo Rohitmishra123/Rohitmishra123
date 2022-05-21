@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script>
+            $(function(){
+                $("button").click(function(){
+                    $("#preview").slideToggle(3000);
+                })
+            })
+        </script>
+    </head>
+    <body class="container-fluid">
+        <button class="Show / Hide"></button>
+        <div id="preview">
+            <img src="../Photos/Mens.jpeg" width="300" height="300">
+            <img src="../Photos/couple.jpg" width="300" height="300">
+            <img src="../Photos/jacket.jpg" width="300" height="300">
+            <img src="../Photos/Watch.png" width="300" height="300">
+            <img src="../Photos/shoes1.jpg" width="300" height="300">
+        </div>
+    </body>
+</html>

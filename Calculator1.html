@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+            <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+            <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+            <script>
+                function sumbit(){
+                    class Calculator{
+                        init(){
+                            first_num=parseInt(document.getElementById("first_num").value);
+                            second_num=parseInt(document.getElementById("second_num").value);
+                        }
+                    }
+                    class addtition extends Calculator{
+                        result(){
+                            super.init();
+                            var sum=first_num+second_num;
+                            var msg=
+                            document.getElementById("output").innerHTML=`the sum two numbers is "${sum}".`.fontsize("5");
+
+                            }
+                        }
+                        class substraction extends Calculator{
+                            result(){
+                                super.init();
+                                var diff=first_num-second_num;
+                                var msg=
+                                document.getElementById("output").innerHTML=`the difference of two numbers is "${diff}".`.fontsize("5");
+                            }
+                        }
+                        class multiplication extends Calculator{
+                            result(){
+                                super.init();
+                                var products=first_num*second_num;
+                                var msg=
+                                document.getElementById("output").innerHTML=`the products of two numbers is "${multi}".`.fontsize("5");
+                            }
+                        }
+                        class division extends calculator{
+                    result(){
+
+                        super.init();
+                        var quotient = first_num / second_num;
+                        var remainder = first_num % second_num;
+                        var msg =
+                        document.getElementById("output").innerHTML=`the quotient of two number is "${quotient}".<br>
+                        the remainder of two number is "${remainder}".`.fontsize("5");
+                        }
+
+                        }
+                        opperation=
+                        document.getAnimations("opperation").value;
+                        obj=[new addtition,new substraction,new multiplication,new division];
+                        obj[opperation].result();
+                    }
+                
+            </script>
+        
+    </head>
+    <body class="continer-fluid d-flex justify-content-center align-items-center">
+        <div class="mt-3 border border-2 border-dark p-4 w-50 justify-content-center align-items-center m-5 bg-white">
+            <div class="form-control bg-dark text-white">
+                enter first number:<input type="text" id="first_num">
+            </br>
+        </br>
+        enter second number:<input type="text" id="second_num">
+            </div>
+            <br>
+            <div class="form-control bg-dark text-white">
+                <select>
+                    <option value="o">addtition</option>
+                    <option value="1">substraction</option>
+                    <option value="2">multiplication</option>
+                    <option value="3">division</option>
+                </select>
+            </div>
+            <button class="btn btn-info mt-3" onclick="sumbit()">SUMBIT</button>
+        </div>
+    </body>
+</html>

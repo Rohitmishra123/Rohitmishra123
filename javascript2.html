@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript print</title>
+        <script>
+            function bodyload(){
+               window.document.images[0].src="/Photos/shoes1.jpg"; 
+               window.document.forms[0].elements[0].value="Register";
+               window.document.forms[1].elements[1].value="Login";
+            }
+        </script>
+    </head>
+    <body onload="bodyload()">
+    <div>
+        <img width="200" height="200" border="1">
+
+    </div>
+    <div>
+        <form>
+            <h2>Register</h2>
+            Email:
+            
+            <input type="email">
+            <button>SUBMIT</button>
+        </form>
+    </div>
+    <div>
+        <form>
+            <h2>Login</h2>
+            <input type="text">
+            <button>Login</button>
+        </form>
+    </div>
+
+    </body>
+</html>
